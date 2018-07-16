@@ -197,7 +197,7 @@ class ModelExecutor:
         return (training_metrics, validation_metrics, epoch_duration)
 
     def clean_models(self):
-        print "cleaning models..."
+        print("cleaning models...")
         pattern = "{0}{1}_*.*".format(models_path, self.model_config.name)
         fileList = glob(pattern)
         best_acc = 0
@@ -225,11 +225,11 @@ class ModelExecutor:
                     if acc != best_acc:
                         try:
                             os.remove(infile)
-                            print  "removing ", infile
+                            print("removing ", infile)
                         except IOError:
-                            print  "can not delete", infile
+                            print("can not delete", infile)
 
-        print "models cleaned"
+        print("models cleaned")
 
     def epoch_extract(self, PRINT_FREQ, X_train_features, X_train_labels, X_valid_features, batch_size, i, num_examples,
                     sess, training_metrics, validation_metrics, y_valid_labels):

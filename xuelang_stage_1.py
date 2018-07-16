@@ -9,7 +9,7 @@ import xml.etree.ElementTree as ET
 import numpy as np
 
 dataset_dir = "/home/robin/文档/dataset/xuelang/data"
-dataset_dir = "/home/ubuntu/data/resource/dataset/xuelang/data"
+#dataset_dir = "/home/ubuntu/data/resource/dataset/xuelang/data"
 
 def read_image_dir(dir , prefix= ""):
     file_list = glob("{0}/*/*.jpg".format(dir))

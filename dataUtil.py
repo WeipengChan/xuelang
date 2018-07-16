@@ -2,8 +2,7 @@
 # author : Robin
 
 import sys
-reload(sys)
-sys.setdefaultencoding('utf8')
+
 import matplotlib.pyplot as plt
 
 import pandas as pd
@@ -13,7 +12,7 @@ import os.path
 from glob import glob
 from PIL import Image
 
-from imgaug import augmenters as iaa
+#from imgaug import augmenters as iaa
 
 ImgWidth = 128
 ImgHeight = 128
@@ -261,10 +260,10 @@ def improveContras(grayscale):
 #################################################################################################################
 
 
-if __name__ == '__main__':
-    pattern = "../datasets/000000/*.jpg"
-    X_train = get_imgs_by_file_pattern(pattern)
-    X_train.shape
+# if __name__ == '__main__':
+#     pattern = "../datasets/000000/*.jpg"
+#     X_train = get_imgs_by_file_pattern(pattern)
+#     X_train.shape
 
      # csv = readClassCsv()
      # y = np.ndarray([4,],dtype=np.float32)
