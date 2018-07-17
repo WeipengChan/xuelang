@@ -8,7 +8,7 @@ import scipy.misc as misc
 import xml.etree.ElementTree as ET
 import numpy as np
 
-dataset_dir = "/home/robin/文档/dataset/xuelang/data"
+dataset_dir = "/home/robin/文档/dataset/xuelang/data"#这是在家里的linux系统路径，别删～～
 dataset_dir = "/home/ubuntu/data/resource/dataset/xuelang/data"
 
 def read_image_dir(dir , prefix= ""):
